@@ -1,0 +1,141 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sibtain Electricals | Kanpur</title>
+    <meta name="description"
+          content="Explore electrical supplies at Sibtain Electricals, Becon Ganj, Kanpur. Contact us for product prices and enquiries.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        Electrical Supplies & Accessories | Becon Ganj, Kanpur
+    </div>
+
+    <header class="header">
+        <a href="#" class="brand">
+            <span class="brand-icon">⚡</span>
+            <span>SIBTAIN <strong>ELECTRICALS</strong></span>
+        </a>
+
+        <button class="cart-button" id="cart-toggle">
+            🛒 Cart <span id="cart-count">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">YOUR LOCAL ELECTRICAL STORE</span>
+
+                <h1>Powering Your World,<br>
+                    <span>One Connection at a Time.</span>
+                </h1>
+
+                <p>
+                    Explore electrical supplies, lighting accessories,
+                    heating elements and more.
+                </p>
+
+                <a href="#products" class="primary-button">
+                    Explore Products ↓
+                </a>
+
+                <div class="location-note">
+                    📍 Becon Ganj, Kanpur, Uttar Pradesh
+                </div>
+            </div>
+
+            <div class="hero-graphic" aria-hidden="true">
+                <div class="electric-circle">⚡</div>
+                <span class="graphic-label">POWER. QUALITY. SERVICE.</span>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="section-heading">
+                <span class="eyebrow">FIND WHAT YOU NEED</span>
+                <h2>Shop by Category</h2>
+            </div>
+
+            <div class="category-list" id="categories"></div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <span class="eyebrow">OUR PRODUCT COLLECTION</span>
+                <h2>Electrical Products</h2>
+                <p>Find a product and enquire about its price.</p>
+            </div>
+
+            <div class="product-controls">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search wires, lights, heater elements..."
+                    aria-label="Search products"
+                >
+
+                <select id="category-filter" aria-label="Filter by category">
+                    <option value="All">All Categories</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-grid"></div>
+
+            <p class="disclaimer">
+                Product availability and prices are subject to confirmation.
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <div>
+                <span class="eyebrow">NEED HELP?</span>
+                <h2>Looking for a specific product?</h2>
+                <p>Contact us to enquire about availability and pricing.</p>
+            </div>
+
+            <button class="primary-button" id="contact-whatsapp">
+                Enquire on WhatsApp ↗
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="brand footer-brand">
+            <span class="brand-icon">⚡</span>
+            <span>SIBTAIN <strong>ELECTRICALS</strong></span>
+        </a>
+
+        <p>Becon Ganj, Kanpur, Uttar Pradesh</p>
+        <p>© <span id="year"></span> Sibtain Electricals</p>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="cart-close" aria-label="Close cart">✕</button>
+        </div>
+
+        <div id="cart-items" class="cart-items"></div>
+
+        <div class="cart-footer">
+            <p id="cart-total">Total: Price on enquiry</p>
+            <button class="primary-button full-button" id="checkout-whatsapp">
+                Order on WhatsApp
+            </button>
+            <small>Final prices and availability will be confirmed by the shop.</small>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
